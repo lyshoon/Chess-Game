@@ -229,7 +229,7 @@ public class Chessman : MonoBehaviour
         if(sc.PositionOnBoard(x,y))
         {
             GameObject cp = sc.GetPosition(x,y);
-            if(cp = null)
+            if(cp == null)
             {
                 MovePlateSpawn(x,y);
             }
@@ -299,3 +299,4 @@ public class Chessman : MonoBehaviour
         mpScript.SetCoords(matrixX, matrixY);
     }
 }
+
